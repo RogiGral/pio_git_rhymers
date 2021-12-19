@@ -7,6 +7,15 @@ public class DefaultCountingOutRhymer {
 	private static final int LAST_VALUE = 11;
 
 	private final int[] numbers = new int[STACK_CAPACITY];
+
+	public int getTotal() {
+		return total;
+	}
+
+	public void setTotal(int total) {
+		this.total = total;
+	}
+
 	private int total = EMPTY_STACK_VALUE;
 
 	public void countIn(int in) {
